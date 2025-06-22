@@ -110,8 +110,6 @@ ENDIF.
 
 CHECK lv_json IS NOT INITIAL.
 
-*cl_demo_output=>display_json( lv_json ).
-
 DATA(jsonpath) = NEW zcl_jsonpath( ).
 TRY.
     DATA(lt_result) = jsonpath->evaluate( iv_json = lv_json iv_jsonpath = p_path ).
